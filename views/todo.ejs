@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>hoax</title>
+      
+        <script src="https://code.jquery.com/jquery-1.12.3.js" integrity="sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc=" crossorigin="anonymous">
+        </script>
+        <link href="/assets/styles.css" rel="stylesheet" type="text/css"/>
+       
+    </head>
+    <body>
+        <center>  <h1 style="color: red;">HOAX QUOTES</h1></center>
+       <br><br>
+        <div id = "todo-table">
+          
+            <form method="POST" >
+                <input type="text" name="item"/>
+                <button type="submit">post your quotes</button>
+            </form>
+            <ul>
+                
+                <%for(var i=0 ; i < todos.length ; i++){%>
+                    <li> <%= todos[i].item%></li>
+                    <br>
+         
+                 <%}%>
+
+
+            </ul>
+
+
+
+        </div>
+        
+    </body>
+  
+</html>
